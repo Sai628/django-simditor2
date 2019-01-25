@@ -1,0 +1,6 @@
+include LICENSE
+include intro.rst
+include README.md
+recursive-include simditor/static *
+recursive-include simditor/templates *
+recursive-include docs *
