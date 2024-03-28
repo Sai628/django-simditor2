@@ -4,7 +4,7 @@
 
 from setuptools import setup, find_packages
 
-LONG_DESCRIPTION = open('intro.rst', 'r').read()
+LONG_DESCRIPTION = open('intro.md', 'r').read()
 
 INSTALL_REQUIRES = [
     'Django',
@@ -13,12 +13,13 @@ INSTALL_REQUIRES = [
 
 setup(
     name='django-simditor2',
-    version='0.1',
+    version='0.2',
     packages=find_packages(exclude=[".DS_Store"]),
     include_package_data=True,
     license='MIT License',
     description='A Django admin Simditor integration.',
     long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
     url='https://github.com/sai628/django-simditor2',
     author='Sai628',
     author_email='sai100628@gmail.com',
